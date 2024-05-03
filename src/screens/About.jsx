@@ -1,14 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
 
 const About = () => {
   return (
     <View>
-      <Text>About</Text>
+      <Text style={styles.text}>About</Text>
     </View>
-  )
-}
+  );
+};
 
-export default About
+export default About;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  text: {
+    color: 'black',
+  },
+});
