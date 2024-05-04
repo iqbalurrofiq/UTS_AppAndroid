@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, FlatList, Settings} from 'react-native';
+// App.js
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -7,17 +7,37 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from './screens/Home';
 import About from './screens/About';
 import Account from './screens/Account';
+import {Text} from 'react-native'; // Import Text from react-native
 
 const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
 
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Tab"
+          component={MenuTab}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+const CustomHeader = () => ( // Define CustomHeader component
+  <Text style={{fontSize: 24, fontWeight: 'bold', color: '#255'}}>Top Up</Text>
+);
+
 const MenuTab = () => {
   return (
-    <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
+    <Tabs.Navigator screenOptions={{tabBarActiveTintColor: '#255'}}>
       <Tabs.Screen
-        name="Home"
+        name="Top Up"
         component={Home}
         options={{
+          headerTitle: () => <CustomHeader />, // Use CustomHeader component as headerTitle
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
@@ -48,20 +68,4 @@ const MenuTab = () => {
   );
 };
 
-function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Tab"
-          component={MenuTab}
-          options={{headerShown: false}}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
 export default App;
-
-const style = StyleSheet.create({});

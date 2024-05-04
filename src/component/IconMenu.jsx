@@ -1,38 +1,49 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+// IconMenu.js
 import React from 'react';
+import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
-const IconMenu = ({label}) => {
+const IconMenu = ({label, image}) => {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.box}>
-        <Text style={styles.textIcon}>Icon</Text>
+        <Image
+          source={image}
+          style={styles.image}
+        />
       </View>
-      <Text style={styles.textIcon}>{label}</Text>
+      <Text style={styles.label}>{label}</Text>
     </TouchableOpacity>
   );
 };
 
-export default IconMenu;
-
 const styles = StyleSheet.create({
   container: {
-    //borderWidth: 1,
     margin: 5,
     padding: 5,
-    width: 84,
-    justifyContent: 'center',
-    alignContent: 'center',
+    alignItems: 'center',
   },
   box: {
-    borderWidth: 1,
     width: 72,
     height: 72,
+    backgroundColor: '#333',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 5,
+    borderWidth: 3,
   },
-  textIcon: {
-    color: 'black',
+  image: {
+    width: 50, // Sesuaikan dengan ukuran gambar/logo Anda
+    height: 50, // Sesuaikan dengan ukuran gambar/logo Anda
+    resizeMode:'cover',
+    width: '100%',
+    height: '100%',
+  },
+  label: {
+    color: '#000',
+    marginTop: 5,
     textAlign: 'center',
+    fontWeight: 'bold',
   },
 });
+
+export default IconMenu;
