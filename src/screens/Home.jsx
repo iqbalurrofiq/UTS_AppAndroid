@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         resizeMode: "cover",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     container: {
         flex: 1,
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
     },
     centerContainer: {
         alignItems: 'center',
-        marginBottom: 20,
     },
     title: {
         fontSize: 24,
