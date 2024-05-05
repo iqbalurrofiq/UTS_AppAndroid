@@ -3,16 +3,16 @@ import { StyleSheet, Text, View, ScrollView, ImageBackground, TextInput } from '
 import IconMenu from '../component/IconMenu';
 
 const Data = [
-    { id: 1, label: 'Mobile Legends', image: require('../assets/icons/ML.png') },
-    { id: 2, label: 'Free Fire', image: require('../assets/icons/FF.png') },
-    { id: 3, label: 'PUBG Mobile', image: require('../assets/icons/PUBG.png') },
-    { id: 4, label: 'Lords Mobile', image: require('../assets/icons/LM.png') },
-    { id: 5, label: 'Genshin Impact', image: require('../assets/icons/GI.png') },
-    { id: 6, label: 'Rise Of Kingdom', image: require('../assets/icons/ROK.png') },
+    { id: 1, label: 'Mobile Legends', image: require('../assets/icons/ML.png')  },
+    { id: 2, label: 'Free Fire',      image: require('../assets/icons/FF.png')  },
+    { id: 3, label: 'PUBG Mobile',    image: require('../assets/icons/PUBG.png')},
+    { id: 4, label: 'Lords Mobile',   image: require('../assets/icons/LM.png')  },
+    { id: 5, label: 'Genshin Impact', image: require('../assets/icons/GI.png')  },
+    { id: 6, label: 'Rise Of Kingdom',image: require('../assets/icons/ROK.png') },
     { id: 7, label: 'Clash Of Clans', image: require('../assets/icons/COC.png') },
-    { id: 8, label: 'Dragon City', image: require('../assets/icons/DC.png') },
-    { id: 9, label: 'Clash Royale', image: require('../assets/icons/CR.png') },
-    { id: 10, label: 'Royal Match', image: require('../assets/icons/RM.png') },
+    { id: 8, label: 'Dragon City',    image: require('../assets/icons/DC.png')  },
+    { id: 9, label: 'Clash Royale',   image: require('../assets/icons/CR.png')  },
+    { id: 10, label: 'Royal Match',   image: require('../assets/icons/RM.png')  },
 ];
 
 const Home = ({ navigation }) => {
@@ -60,10 +60,10 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        paddingTop: 10, // Atur padding atas sesuai kebutuhan
+        paddingTop: 10,
     },
     searchInput: {
-        backgroundColor: '#555',
+        backgroundColor: '#333',
         padding: 10,
         marginHorizontal: 20,
         marginBottom: 10,

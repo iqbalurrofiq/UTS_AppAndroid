@@ -8,14 +8,14 @@ const Account = () => {
       <ScrollView>
         <View style={styles.content}>
           <Image
-            source={require('../assets/icons/Wallpaper.png')}
+            source={require('../assets/icons/A.png')}
             style={styles.image}
           />
           <Text style={styles.sectionTitle}>Profil Anda</Text>
           <View style={styles.profileInfo}>
             <Icon name="person" size={24} color="green" />
             <Text style={styles.label}>Nama:</Text>
-            <Text style={styles.value}>John Doe</Text>
+            <Text style={styles.value}>iqbalur Rofiq</Text>
             <TouchableOpacity style={styles.editButton}>
               <Text style={styles.editButtonText}>Edit</Text>
             </TouchableOpacity>
@@ -23,7 +23,7 @@ const Account = () => {
           <View style={styles.profileInfo}>
             <Icon name="email" size={24} color="green" />
             <Text style={styles.label}>Email:</Text>
-            <Text style={styles.value}>john.doe@example.com</Text>
+            <Text style={styles.value}>iqbal123456789@example.com</Text>
             <TouchableOpacity style={styles.editButton}>
               <Text style={styles.editButtonText}>Edit</Text>
             </TouchableOpacity>
