@@ -1,4 +1,3 @@
-// IconMenu.js
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
@@ -32,8 +31,8 @@ const styles = StyleSheet.create({
     borderWidth: 3,
   },
   image: {
-    width: 50, // Sesuaikan dengan ukuran gambar/logo Anda
-    height: 50, // Sesuaikan dengan ukuran gambar/logo Anda
+    width: 50, 
+    height: 50,    
     resizeMode:'cover',
     width: '100%',
     height: '100%',

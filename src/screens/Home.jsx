@@ -18,7 +18,6 @@ const Data = [
 const Home = ({ navigation }) => {
     const [searchText, setSearchText] = useState('');
 
-    // Filter data based on search text
     const filteredData = Data.filter(item =>
         item.label.toLowerCase().includes(searchText.toLowerCase())
     );
@@ -34,7 +33,7 @@ const Home = ({ navigation }) => {
                         value={searchText}
                     />
                     <View style={styles.centerContainer}>
-                        <Text style={styles.title}>Selamat Datang!</Text>
+                        <Text style={styles.title}>Selamat Datang! </Text>
                         <Text style={styles.subtitle}>Jelajahi berbagai game favorit Anda</Text>
                     </View>
                     <View style={styles.iconMenuContainer}>
